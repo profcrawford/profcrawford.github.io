@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ENTER PASSWORD</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="passContainer">
+        <form id="myForm" autocomplete="off">
+            <input type="text" placeholder="ENTER PASSWORD" id="passWord"/>
+            <input type="button" value="SUBMIT" onclick="validatePassword()"/>
+        </form>
+        <p id="incorrect">Incorrect password. Try again, professor.</p>
+        </div>
+        
+        <script>
+            var incorrect = document.getElementById("incorrect");
+            incorrect.style.display = "none";
+
+            function validatePassword() {
+                var pass = document.getElementById("passWord").value;
+                
+                if(pass.toLowerCase() == "chaos") {
+                    window.location.href = "content.html";
+                }
+                else {
+                    incorrect.style.display = "block";
+                }
+            }
+             document.getElementById("myForm").onkeypress = function(e) {
+                var key = e.charCode || e.keyCode || 0;     
+                if (key == 13) {
+                    e.preventDefault();
+                }
+            }
+        </script>
+    </body>
+</html>
