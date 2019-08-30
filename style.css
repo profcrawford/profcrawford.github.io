@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+    padding: 10%;
+}
+
+input {
+    color: greenyellow;
+    background-color: black;
+    font-family: "Courier New", monospace;
+    font-size: 24px;
+}
+
+#passContainer {
+    display: inline-block;
+    position: absolute;
+    bottom: 48%;
+    width: 60%;
+    text-align: center;
+    left: 20%;
+}
+
+p, a, h1, h2 {
+    font-family: "Courier New", monospace;
+    color: greenyellow;
+}
+
+::placeholder {
+    color: lightgray;
+}
+
+#incorrect {
+    color: red;
+}
+
+.folder {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+#title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+iframe {
+    border: 3px solid greenyellow;
+}
+
+#panel {
+    border: 3px solid greenyellow;
+    width: 80%;
+    text-align: center;
+}
